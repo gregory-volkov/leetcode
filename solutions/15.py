@@ -1,3 +1,6 @@
+# 15. 3Sum
+# https://leetcode.com/problems/3sum/
+
 def threeSum(nums: List[int]) -> List[List[int]]:
     nums = sorted(nums)
     nums_set = defaultdict(int)
