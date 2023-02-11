@@ -18,8 +18,21 @@ def bsearch_upper(lst, item):
     i, j = 0, len(lst)
     while i < j:
         mid = (i + j) // 2
-        if lst[mid] <= item:
-            i = mid + 1
-        else:
+        if item < lst[mid]:
             j = mid
-    return i - 1
+        else:
+            i = mid + 1
+    return i
+
+
+# Lower bound
+# Returns the id + 1 of required item or the place where it should be
+def bsearch_lower(lst, item):
+    i, j = 0, len(lst)
+    while i < j:
+        mid = (i + j) // 2
+        if item <= lst[mid]:
+            j = mid
+        else:
+            i = mid + 1
+    return i
