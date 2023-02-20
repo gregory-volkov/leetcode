@@ -13,7 +13,7 @@ def bsearch(nums, target):
     return -1
 
 # Upper bound
-# Returns the id of required item or the place where it should be
+# Returns the index of the first element that is greater
 def bsearch_upper(lst, item):
     i, j = 0, len(lst)
     while i < j:
