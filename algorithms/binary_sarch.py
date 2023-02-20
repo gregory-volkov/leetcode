@@ -26,7 +26,8 @@ def bsearch_upper(lst, item):
 
 
 # Lower bound
-# Returns the id + 1 of required item or the place where it should be
+# Returns the id of required item
+# Or index of the first item that is greater
 def bsearch_lower(lst, item):
     i, j = 0, len(lst)
     while i < j:
